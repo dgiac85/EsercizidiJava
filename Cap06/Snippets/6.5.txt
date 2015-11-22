@@ -1,0 +1,4 @@
+public void foo(int a)
+{
+    this.sqrt(a);
+}

@@ -1,0 +1,2 @@
+import static java.lang.Math.abs;
+int a = abs(-5);

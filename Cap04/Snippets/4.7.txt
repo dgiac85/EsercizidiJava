@@ -1,0 +1,2 @@
+boolean b = true, c = false;
+boolean d = b > c; // ERRORE - bad operand types for binary operator '>'

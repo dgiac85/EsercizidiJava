@@ -1,0 +1,2 @@
+String s1 = new String("sono una stringa!");
+int r1 = s1.indexOf('s'); // 0 prima occorrenza trovata di s

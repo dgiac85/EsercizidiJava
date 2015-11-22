@@ -1,0 +1,3 @@
+// lambda equivalente: (String s) -> s.toLowerCase()
+Function<String, String> f_tol = String::toLowerCase;
+f_tol.apply("PELLEGRINO"); // pellegrino

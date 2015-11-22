@@ -1,0 +1,19 @@
+Path path = Paths.get("C:\\MY_JAVA_SOURCES\\Test.java");
+Path path_2 = Paths.get("Test.class");
+FileSystem fs = FileSystems.getDefault();
+
+PathMatcher matcher = fs.getPathMatcher("glob:*.java");
+matcher.matches(path); // false
+
+matcher = fs.getPathMatcher("glob:**.java"); 
+matcher.matches(path); // true - è stato percorso tutto il path
+matcher = fs.getPathMatcher("glob:????.class"); 
+matcher.matches(path_2); // true - esattamente 4 caratteri prima di .class
+
+matcher = fs.getPathMatcher("glob:*.{class,java}"); 
+matcher.matches(path_2); // true - il nome termina con .class o .java
+
+matcher = fs.getPathMatcher("glob:T[abef]s?.class"); 
+// true - il nome inizia con T, ha una delle lettere a,b,e, o f, ha la lettera s
+// ha esattamente un qualsiasi carattere, termina con .class 
+matcher.matches(path_2);    

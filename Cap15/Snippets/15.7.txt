@@ -1,0 +1,2 @@
+Character d = new Character('4');
+boolean b = Character.isLetter(d); // false

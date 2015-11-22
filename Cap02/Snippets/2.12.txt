@@ -1,0 +1,3 @@
+// ERRORE - unclosed string literal
+String str = "Sono una 
+                    stringa";

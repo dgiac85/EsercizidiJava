@@ -1,0 +1,3 @@
+com.pellegrinoprincipe.RethrowingAndTypeChecking
+com.pellegrinoprincipe.ExceptionB
+com.pellegrinoprincipe.ExceptionA

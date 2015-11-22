@@ -1,0 +1,1 @@
+SELECT * from autore WHERE cognome LIKE 'Pr_%';

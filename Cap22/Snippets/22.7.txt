@@ -1,0 +1,1 @@
+SELECT nome, cognome FROM autore ORDER BY cognome DESC;

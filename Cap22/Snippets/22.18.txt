@@ -1,0 +1,26 @@
+...
+import javax.sql.rowset.RowSetFactory;
+import javax.sql.rowset.RowSetProvider;
+import javax.sql.rowset.WebRowSet;
+
+try
+{
+	RowSetFactory rf = RowSetProvider.newFactory();
+	WebRowSet wrs = rf.createWebRowSet();
+
+	wrs.setUrl("jdbc:mysql://localhost/articoli");
+	wrs.setUsername("java8");
+	wrs.setPassword("java8");
+
+	wrs.setCommand("SELECT * FROM genere");
+	wrs.execute();
+	
+	try (FileWriter writer = new FileWriter("out.xml")) // scrivo il rowset 
+                                                       // in un file xml
+	{
+		wrs.writeXml(writer);
+	}
+
+}
+catch (IOException ex) {}
+catch (SQLException e) {}

@@ -1,0 +1,4 @@
+int[] a, b, c;
+a = new int[3];
+b = new int[4];
+c = new int[5];

@@ -1,0 +1,25 @@
+...
+label_insert = new javax.swing.JLabel();
+separator = new javax.swing.JSeparator();
+lable_name = new javax.swing.JLabel();
+text_name = new javax.swing.JTextField();
+button_ok = new javax.swing.JButton();
+
+setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+getContentPane().setLayout(new java.awt.GridLayout(5, 1));
+
+label_insert.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+label_insert.setText("Inserisci i tuoi dati");
+getContentPane().add(label_insert);
+getContentPane().add(separator);
+
+lable_name.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+lable_name.setText("NOME");
+getContentPane().add(lable_name);
+getContentPane().add(text_name);
+
+button_ok.setText("OK");
+getContentPane().add(button_ok);
+
+pack();
+...

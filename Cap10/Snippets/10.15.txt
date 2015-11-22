@@ -1,0 +1,36 @@
+public interface Iterable<T> 
+{
+    Iterator<T> iterator();    
+    default void forEach(Consumer<? super T> action) 
+    {
+        Objects.requireNonNull(action);
+        for (T t : this) { action.accept(t); }
+    }
+    ...
+}
+
+public interface Iterator<E> 
+{
+    
+    boolean hasNext();
+    E next();
+    ...
+    default void forEachRemaining(Consumer<? super E> action) 
+    {
+        Objects.requireNonNull(action);
+        while (hasNext())
+            action.accept(next());
+    }
+}
+
+public interface List<E> extends Collection<E> 
+{
+    int size();
+    ...    
+    default void replaceAll(UnaryOperator<E> operator) 
+    {
+        Objects.requireNonNull(operator);
+        final ListIterator<E> li = this.listIterator();
+        while (li.hasNext()) { li.set(operator.apply(li.next())); }
+    }
+}

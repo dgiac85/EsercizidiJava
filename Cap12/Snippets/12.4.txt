@@ -1,0 +1,2 @@
+import com.pellegrinoprincipe.*;
+A a = new A();

@@ -1,0 +1,37 @@
+...
+import javax.sql.rowset.RowSetFactory;
+import javax.sql.rowset.RowSetProvider;
+import javax.sql.rowset.JoinRowSet;
+
+try
+{
+    Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/articoli",
+                                                  "java8", "java8");
+
+    RowSetFactory rf = RowSetProvider.newFactory();
+    JoinRowSet jrs = rf.createJoinRowSet();
+
+    // primo resultset
+    CachedRowSet crs_autore = rf.createCachedRowSet();
+    crs_autore.setCommand("SELECT * FROM autore");
+    crs_autore.execute(conn);
+
+    // secondo resultset
+    CachedRowSet crs_articolo = rf.createCachedRowSet();
+    crs_articolo.setCommand("SELECT * FROM articolo");
+    crs_articolo.execute(conn);
+
+    // impostazione delle colonne di matching PK/FK
+    jrs.addRowSet(new RowSet[] { crs_autore, crs_articolo },
+                  new String[] { "id_autore", "autore" });
+
+    while (jrs.next()) // mostra il risultato
+    {
+        String n = jrs.getString("nome");
+        String c = jrs.getString("cognome");
+        String t = jrs.getString("titolo");
+        System.out.println(n + " " + c + " " + t);
+    }
+
+}
+catch (SQLException e) {}

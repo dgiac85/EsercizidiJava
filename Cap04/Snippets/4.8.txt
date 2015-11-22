@@ -1,0 +1,2 @@
+int a = 120, b = 111, c = 111, d = 112;
+boolean e = a < b == c > d; // true

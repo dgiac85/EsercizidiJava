@@ -1,0 +1,2 @@
+// stampa le lettere j k l tra virgolette e separate da TAB
+String str = "\"\u006A\t\u006B\t\u006C\""; // "j	k	l"

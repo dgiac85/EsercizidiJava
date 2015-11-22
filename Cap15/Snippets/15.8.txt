@@ -1,0 +1,2 @@
+boolean b1 = Character.isJavaIdentifierStart('€'); // true
+boolean b2 = Character.isJavaIdentifierStart('['); // false

@@ -1,0 +1,3 @@
+Character c = new Character('A'); // istanza di Character
+Character a_c = 'Z';              // autoboxing
+char c_c = a_c;                   // autounboxing

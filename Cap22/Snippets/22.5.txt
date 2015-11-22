@@ -1,0 +1,1 @@
+SELECT * FROM autore WHERE cognome = "Principe";

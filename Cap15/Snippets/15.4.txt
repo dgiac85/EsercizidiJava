@@ -1,0 +1,2 @@
+char a1 = Character.forDigit(6, 10);  // 6
+char a2 = Character.forDigit(13, 16); // d

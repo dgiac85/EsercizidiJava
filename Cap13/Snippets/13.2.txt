@@ -1,0 +1,8 @@
+// dichiarazione delle annotazioni
+public @interface Author { String value(); } // Annotazione A
+
+public @interface Authors { Author[] value(); } // Annotazione B che ritorna A[]
+
+// utilizzo a ripetizione dell’annotazione A per il "tramite" di B
+@Authors({@Author("Pellegrino Principe"), @Author("Silvio Rossi")})
+public void foo() {}

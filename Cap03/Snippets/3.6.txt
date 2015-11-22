@@ -1,0 +1,12 @@
+class MyClass {};
+
+boolean b[] = {false, false, true};          // array di booleani
+short[] s = new short[4];                    // array di short
+byte[] by = {1, 3, 4};                       // array di byte
+long l[] = new long[b.length];               // array di long
+float f[] = {12.44f, 678.12f};               // array di float
+double d[] =  {f[0], f[1], 12E4};            // array di double
+String str[] = {"RED", new String("GREEN")}; // array di stringhe
+char ac[] = {'h', 'e', 'l', 'l', 'o'};       // array di caratteri
+Object[] obj = new Object[2];                // array di oggetti di tipo Object
+MyClass[] mc = new MyClass[11];              // array di oggetti di tipo MyClass

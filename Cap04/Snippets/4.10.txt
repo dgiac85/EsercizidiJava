@@ -1,0 +1,12 @@
+int a = 10, b = 14;
+boolean c = a > 10 && b < 15; // AND logico espressione false
+c = a > 10 || b < 15;         // OR logico espressione true
+
+c = a > 10 & b-- < 15; // AND logico booleano espressione false e decremento di b
+int d = b; // d varrà 13
+
+c = a == 10 | b-- < 15; // OR inclusivo logico booleano espressione true e decremento di b
+d = b; // d varrà, ora, 12 
+
+c = a == 10 ^ b < 15; // OR esclusivo logico booleano espressione false
+c = (!(a > 10));      // NOT logico espressione true

@@ -1,0 +1,2 @@
+String s1 = new String("Sono una stringa!");
+String s2 = new String(s1); // Sono una stringa!

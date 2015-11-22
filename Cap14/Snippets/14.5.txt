@@ -1,0 +1,5 @@
+/**
+ * See the Copyright image for the following image 
+ * {@docRoot}/img/copyright.png
+ */
+private String trash_image = "trash.png";

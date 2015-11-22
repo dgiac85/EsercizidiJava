@@ -1,0 +1,1 @@
+StackGeneric sd = new StackGeneric<Double>(3);

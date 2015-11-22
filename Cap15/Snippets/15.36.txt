@@ -1,0 +1,3 @@
+StringBuilder sb_1 = new StringBuilder("Sono una stringa di tipo builder!");
+int offset = sb_1.indexOf("u");
+sb_1.deleteCharAt(offset); // Sono na stringa di tipo builder!

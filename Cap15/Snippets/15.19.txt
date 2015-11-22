@@ -1,0 +1,3 @@
+String s1 = new String("Sono una stringa!");
+String s2 = new String("Sono una stringa!");
+boolean b2 = s1.equals(s2); // true

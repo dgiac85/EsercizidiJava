@@ -1,0 +1,2 @@
+int x[] = {1,2,3};
+x++; // ERRORE - bad operand type int[] for unary operator '++'

@@ -1,0 +1,2 @@
+int c[]; // dichiaro
+c = new int[10]; // inizializzo e alloco memoria

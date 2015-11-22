@@ -1,0 +1,21 @@
+interface Interface_1
+{
+    default void foo() { System.out.println("Interface_1"); }
+}
+
+interface Interface_2
+{
+    default void foo() { System.out.println("Interface_2"); }
+}
+
+// error: class Class_1 inherits unrelated defaults for foo() 
+// from types Interface_1 and Interface_2...
+// class Class_1 implements Interface_1, Interface_2 {}
+
+class Class_1 implements Interface_1, Interface_2 
+{
+    public void foo() { Interface_1.super.foo(); }
+}
+...
+
+new Class_1().foo(); // Interface_1

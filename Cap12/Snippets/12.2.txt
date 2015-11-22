@@ -1,0 +1,1 @@
+com.pellegrinoprincipe.A a = new com.pellegrinoprincipe.A();

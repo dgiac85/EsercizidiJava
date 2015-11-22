@@ -1,0 +1,2 @@
+int a = 10, b = 11;
+String c = a < b ? "si" : "no"; // c conterrà "si"

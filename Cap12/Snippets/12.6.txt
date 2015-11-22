@@ -1,0 +1,4 @@
+import static java.lang.Math.*;
+int a = abs(-5);
+int b = sqrt(16);
+int c = max(5, 10);

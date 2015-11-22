@@ -1,0 +1,2 @@
+com.pellegrinoprincipe.ComparableWithCustomTypes
+com.pellegrinoprincipe.Employee

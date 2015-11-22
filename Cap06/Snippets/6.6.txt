@@ -1,0 +1,2 @@
+MyMath math = new MyMath();    // riferimento math dell'oggetto MyMath
+double val = math.sqrt(55.55); // chiamata del metodo

@@ -1,0 +1,2 @@
+INSERT INTO autore (nome, cognome, indirizzo, citta, telefono, email, professione) 
+VALUES ("Pellegrino", "Principe", "Via Di Fantasia 1080", "Roma", "--", "gnu_tux@yahoo.it", "Sviluppatore Software");

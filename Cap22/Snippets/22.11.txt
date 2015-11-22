@@ -1,0 +1,13 @@
+DELIMITER //
+CREATE PROCEDURE showConnectedUser(OUT cu varchar(50), INOUT tt datetime)
+BEGIN
+   -- leggo la data attuale di richiesta
+   SELECT tt;  
+   /* 
+      ne imposto una nuova         
+   */   
+   SET tt = NOW();    
+      -- utente connesso
+   SELECT CURRENT_USER() INTO cu;
+END //
+DELIMITER ;

@@ -1,0 +1,2 @@
+String s1 = "Pallone";
+boolean b = s1.endsWith("ore"); // false

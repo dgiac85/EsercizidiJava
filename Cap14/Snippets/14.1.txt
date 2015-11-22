@@ -1,0 +1,6 @@
+/**
+ * doStuff...
+ * 
+ * @since 1.0
+*/
+public void doStuff() {}

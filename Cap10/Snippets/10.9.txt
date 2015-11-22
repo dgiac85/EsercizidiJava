@@ -1,0 +1,7 @@
+function multiplyBy(m)
+{
+    return function(n) { return m * n; }
+}
+
+multiplyBy(10)(5); // 50
+multiplyBy(100)(9); // 900

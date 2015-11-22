@@ -1,0 +1,2 @@
+String s1 = new String("sono una stringa!");
+String sub = s1.substring(s1.indexOf("stringa"), s1.lastIndexOf("!") + 1); // stringa!

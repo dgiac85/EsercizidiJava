@@ -1,0 +1,5 @@
+/**
+ * {@inheritDoc}
+ */
+@Override
+public void bar() {}

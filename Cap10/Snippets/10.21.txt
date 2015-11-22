@@ -1,0 +1,30 @@
+// OK parentesi tonde omettibili - un solo parametro senza tipo
+ToIntFunction<Integer> func_1 = z -> z * 10;
+
+// ERRORE - parentesi tonde non omettibili - più di un parametro
+ToIntBiFunction<Integer, Integer> func_2 = z, w -> z * w;
+
+// OK - più parametri indicati tra parentesi tonde
+ToIntBiFunction<Integer, Integer> func_3 = (x, y) -> x - y;
+
+// ERRORE - non è possibile mixare parametri con tipo con parametri senza tipo
+BiPredicate<String, String> func_4 = (String name, surname) -> name.equals(surname);
+
+// ERRORE - non è possibile omettere le parentesi tonde se vi è un solo parametro con 
+// l'indicazione del tipo
+Consumer<Integer> func_5 = Integer j -> System.out.println(j);
+
+// ERRORE - return può solo apparire come statement in un blocco di codice {}
+Function<Double, Double> func_6 = (Double d) -> return d - 10;
+
+// OK - return scritto nell'ambito di un blocco di codice
+Function<Double, Double> func_7 = (Double d) -> 
+{
+    if (d > 10)
+        return d - 10;
+    else
+        return d;
+};
+
+// ERRORE - in un blocco è necessario scrivere return se la funzione lo richiede così come // il punto e virgola
+IntFunction<Integer> func_8 = j -> { j * j * j };

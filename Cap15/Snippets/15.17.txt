@@ -1,0 +1,2 @@
+String s1 = new String("Sono una stringa!");
+char c = s1.charAt(s1.length() - 1); // !

@@ -1,0 +1,9 @@
+public long factorial(long number)
+{
+    if (number < 0)
+        return 0; // attenzione argomento non corretto!!!
+    else if (number <= 1) // caso base
+        return 1;
+    else // passo ricorsivo
+        return number * factorial(number - 1);
+}

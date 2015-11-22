@@ -1,0 +1,20 @@
+interface MyInterface
+{
+    static void foo(){}        
+}
+
+class MyClass implements MyInterface
+{
+    public static void foo(){}
+}
+...
+MyInterface my_int = new MyClass();
+MyClass my_class = new MyClass();
+
+// error: illegal static interface method call my_int.foo(); 
+// the receiver expression should be replaced with the type qualifier 'MyInterface' 1 error        
+my_int.foo();
+MyInterface.foo(); // ok
+
+my_class.foo(); // ok
+MyClass.foo(); // ok

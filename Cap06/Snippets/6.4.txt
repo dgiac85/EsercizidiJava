@@ -1,0 +1,5 @@
+public void foo(int a = 10) // ERRORE - class, interface, or enum expected
+{
+    int b = a + 4;
+}
+

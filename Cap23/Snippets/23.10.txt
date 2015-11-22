@@ -1,0 +1,4 @@
+${pageScope.name}
+${requestScope.age}
+${sessionScope.min_value}
+${applicationScope.person.address}

@@ -1,0 +1,3 @@
+int a = -5;
+if(a == -5) ; // ERRORE LOGICO
+    System.out.println("5");

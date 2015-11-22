@@ -1,0 +1,2 @@
+String s1 = new String("sono una stringa!");
+String n = s1.replace('s', 'S'); // Sono una Stringa!

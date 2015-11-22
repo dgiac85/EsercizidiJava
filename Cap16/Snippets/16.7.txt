@@ -1,0 +1,7 @@
+String str = "Java e' eccellente!";
+String str_2 = "E' eccellente Java";
+String regex = "Java";
+Matcher m = Pattern.compile(regex).matcher(str);
+boolean b = m.lookingAt(); // true
+m.reset(str_2);
+b = m.lookingAt(); // false

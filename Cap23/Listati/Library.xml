@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <book>
+        <title lang="eng">The C++ Programming Language</title>
+        <price currency="€">EUR 65.00</price>
+        <author>Bjarne Stroustrup</author>
+    </book>
+    <book>
+        <title lang="ita">HTML5 CSS3 JavaScript</title>
+        <price currency="€">EUR 35.00</price>
+        <author>Pellegrino Principe</author>
+    </book>
+    <book>
+        <title lang="eng">C# Programming Language</title>
+        <price currency="$">$US 55.00</price>
+        <author>Anders Hejlsberg</author>
+    </book>
+</library>

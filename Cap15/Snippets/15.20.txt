@@ -1,0 +1,3 @@
+String s1 = new String("Labi");
+String s2 = new String("Gabit");
+int r1 = s1.compareTo(s2); // 5 perché ASCII L = 76 ASCII G = 71 L > G

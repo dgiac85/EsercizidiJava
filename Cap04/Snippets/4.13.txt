@@ -1,0 +1,8 @@
+byte a = 64, i;
+
+// a è convertito in int e poi per riassegnarlo al byte si fa il cast.
+// i conterrà un valore negativo (-128) perché lo shift di 1 bit ha posto
+// il valore 1 sull'ultimo bit che è interpretato come negativo
+// mostriamo solo i primi 16 bit: 
+// prima --> 00000000 01000000 dopo --> 11111111 10000000
+i = (byte) (a << 1);

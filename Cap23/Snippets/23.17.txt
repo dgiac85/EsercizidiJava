@@ -1,0 +1,7 @@
+﻿var Person =
+{
+    first_name : "Pellegrino",
+    last_name : "Principe",
+    age : 41
+};
+Person.last_name; // accedo alla proprietà last_name

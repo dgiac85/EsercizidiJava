@@ -1,0 +1,4 @@
+char c[] = "Stringa"; // ERRORE - String cannot be converted to char[]
+char f[] = {'S', 't', 'r', 'i', 'n', 'g', 'a'}; // LECITO
+String s = "Stringa"; // LECITO
+

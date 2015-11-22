@@ -1,0 +1,2 @@
+int[] b = new int[78];
+int l = b.length; // l = 78

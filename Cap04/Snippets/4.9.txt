@@ -1,0 +1,7 @@
+int nr1 = 120, nr2 = 111;
+boolean b = nr1 > nr2; // true
+b = nr1 >= nr2;        // true
+b = nr1 < nr2;         // false
+b = nr1 <= nr2;        // false
+b = nr1 != nr2;        // true
+b = nr1 == nr2;        // false

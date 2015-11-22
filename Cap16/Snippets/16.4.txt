@@ -1,0 +1,5 @@
+String str = "Il mio nome e' Pellegrino e non Rino";
+String regex = "(?i)rino"; // trova rino case-insensitive
+Matcher m = Pattern.compile(regex).matcher(str);
+m.find();
+int s = m.start(); // 21

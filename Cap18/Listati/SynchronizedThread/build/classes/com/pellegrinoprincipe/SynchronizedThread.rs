@@ -1,0 +1,4 @@
+com.pellegrinoprincipe.SynchronizedThread
+com.pellegrinoprincipe.RunThread2
+com.pellegrinoprincipe.RunThread1
+com.pellegrinoprincipe.MakeOperations

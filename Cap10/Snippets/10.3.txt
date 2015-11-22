@@ -1,0 +1,5 @@
+// esempio di definizione di una funzione anonima
+function(x) { return x + 5; }
+
+// esempio di applicazione di una funzione anonima
+(function(x) { return x + 5; }) (50) // risultato 55

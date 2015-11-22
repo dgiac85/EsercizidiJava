@@ -1,0 +1,5 @@
+public void passing(final int k[])
+{
+    int j[] = new int[2];
+    k = j; // ERRORE - final parameter k may not be assigned
+}

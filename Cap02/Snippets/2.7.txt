@@ -1,0 +1,6 @@
+// dichiarazione stessa variabile
+int x = 20;
+// blocco di codice
+{
+    int x = 11; // ERRORE - variable x is already defined
+}

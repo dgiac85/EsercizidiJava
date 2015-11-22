@@ -1,0 +1,2 @@
+SELECT autore.nome, autore.cognome, articolo.titolo FROM autore INNER JOIN articolo ON
+autore.id_autore = articolo.autore AND autore.cognome = "Principe";

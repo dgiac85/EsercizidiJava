@@ -1,0 +1,9 @@
+String array[] = {"BMW", "RENAULT", "FIAT", "MASERATI", "FIAT", "MASERATI", "TOYOTA"};
+List<String> stream = Arrays.asList(array);
+Supplier<ArrayList<String>> supplier = () -> new ArrayList<>();
+BiConsumer<List<String>, String> accumulator = (a, b) -> a.add(b);
+
+ArrayList<String> result = supplier.get();
+for (String element :  stream)
+     accumulator.accept(result, element);
+System.out.println(result); // [BMW, RENAULT, FIAT, MASERATI, FIAT, MASERATI, TOYOTA]

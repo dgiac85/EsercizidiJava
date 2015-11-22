@@ -1,0 +1,9 @@
+import com.pellegrinoprincipe.Computer.Hardware;
+
+public class ComputerClient
+{
+    public static void main(String[] args)
+    {
+        Hardware _h_ = Hardware.KEYBOARD;
+    }
+}

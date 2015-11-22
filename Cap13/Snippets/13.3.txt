@@ -1,0 +1,10 @@
+// dichiarazione delle annotazioni
+public @interface Authors { Author[] value(); }
+
+@Repeatable(Authors.class)
+public @interface Author { String value(); }
+
+// utilizzo a ripetizione dell’annotazione Author
+@Author("Pellegrino Principe")
+@Author("Silvio Rossi")
+public void foo() {}

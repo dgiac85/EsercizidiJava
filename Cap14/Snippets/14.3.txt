@@ -1,0 +1,6 @@
+/**
+ * doStuff {@code metodo <doStuff>}
+ * 
+ * @since 1.0 Nuova versione {@link #doStuff(int a) }
+ */
+public void doStuff() {}

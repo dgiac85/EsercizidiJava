@@ -1,0 +1,2 @@
+String s1 = new String("Sono una stringa!\n\n\t");
+boolean b = s1.contains("una"); // true

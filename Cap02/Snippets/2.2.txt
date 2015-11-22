@@ -1,0 +1,11 @@
+// dichiarazione e inizializzazione di variabili primitive
+int nr1 = 44, nr2 = 55;
+
+// dichiarazione e inizializzazione di variabili riferimento
+String my_str = new String("Java is a great programming language!!!");
+
+// dichiarazione
+float fl1, fl2;
+// inizializzazione
+fl1 = 33.33f;
+fl2 = 44.44f;

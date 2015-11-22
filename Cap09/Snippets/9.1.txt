@@ -1,0 +1,18 @@
+...
+static void printListElements(List<Integer> list)
+{
+    for (Integer elem : list)
+        System.out.println(elem);    
+}
+
+static <T> List<T> factorList(int capacity)
+{
+    List<T> list = new ArrayList<>(capacity);
+    return list;
+}
+...
+// inference in method context con Java 8
+// OK - nessun errore di compilazione 
+// con Java 7 avremo, però, il seguente errore di compilazione: 
+// incompatible types: List<Object> cannot be converted to List<Integer>
+printListElements(factorList(10));    

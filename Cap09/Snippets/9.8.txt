@@ -1,0 +1,7 @@
+public double sum(ArrayList<Number> al)
+{
+    double total = 0;
+    for (Number nr : al)
+        total += nr.doubleValue();
+    return total;
+}  

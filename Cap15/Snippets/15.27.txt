@@ -1,0 +1,4 @@
+String x = new String("Giga");
+String y = "bit";
+String z = x.concat(y); // Gigabit
+String w = x + y;       // Gigabit

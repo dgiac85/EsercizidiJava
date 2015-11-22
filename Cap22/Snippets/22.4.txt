@@ -1,0 +1,1 @@
+INSERT INTO articolo (rivista, titolo, pagina, genere, autore) VALUES (1, "Java 8 - Ecco le novità!", 15, 2, 1);

@@ -1,0 +1,1 @@
+DELETE FROM genere WHERE descrizione = "Grafica 3D";

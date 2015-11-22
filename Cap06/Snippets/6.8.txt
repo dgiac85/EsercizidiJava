@@ -1,0 +1,8 @@
+public static void foo(int nr)
+{
+    System.out.println(nr);
+}
+
+// invocazione del metodo foo con cast esplicito perché il metodo sqrt 
+// ritorna un valore double incompatibile con l'argomento int del metodo foo.
+foo((int) Math.sqrt(3.3)); // perdita di valore...

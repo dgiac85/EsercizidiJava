@@ -1,0 +1,6 @@
+int[] c = new int[10];
+int u = 2, z = 4;
+c[1] = 333;       // scrivo alla posizione con indice 2
+int x = c[u + z]; // prendo dalla posizione con indice 6
+c[10] = 1000;     // ERRORE - ArrayIndexOutOfBoundsException
+

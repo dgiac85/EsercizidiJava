@@ -1,0 +1,3 @@
+String s1 = "Pallone";
+String s2 = "Pollore";
+boolean b = s1.regionMatches(true, 2, s2, 2, 3); // true perché llo uguali

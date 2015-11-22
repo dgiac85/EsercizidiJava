@@ -1,0 +1,8 @@
+// Usiamo la libreria matematica di Java e pertanto il nostro metodo è solo un wrapper. 
+public double sqrt(double nr)
+{
+    final int MAX = 11;
+    double val;            // variabili
+    val = nr;              // istruzioni
+    return Math.sqrt(val); // valore di ritorno
+}

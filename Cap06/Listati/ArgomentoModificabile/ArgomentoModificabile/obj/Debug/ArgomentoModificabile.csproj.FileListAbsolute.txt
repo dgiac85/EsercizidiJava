@@ -1,0 +1,5 @@
+E:\_LIBRO_APOGEO\JAVA_8_GUIDA_COMPLETA\CODICE\Cap06\Listati\ArgomentoModificabile\ArgomentoModificabile\bin\Debug\ArgomentoModificabile.exe.config
+E:\_LIBRO_APOGEO\JAVA_8_GUIDA_COMPLETA\CODICE\Cap06\Listati\ArgomentoModificabile\ArgomentoModificabile\bin\Debug\ArgomentoModificabile.exe
+E:\_LIBRO_APOGEO\JAVA_8_GUIDA_COMPLETA\CODICE\Cap06\Listati\ArgomentoModificabile\ArgomentoModificabile\bin\Debug\ArgomentoModificabile.pdb
+E:\_LIBRO_APOGEO\JAVA_8_GUIDA_COMPLETA\CODICE\Cap06\Listati\ArgomentoModificabile\ArgomentoModificabile\obj\Debug\ArgomentoModificabile.exe
+E:\_LIBRO_APOGEO\JAVA_8_GUIDA_COMPLETA\CODICE\Cap06\Listati\ArgomentoModificabile\ArgomentoModificabile\obj\Debug\ArgomentoModificabile.pdb

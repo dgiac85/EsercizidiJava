@@ -1,0 +1,4 @@
+StringBuilder sb_1 = new StringBuilder("Sono una stringa di tipo builder!");
+
+// Sono StringBuilder!
+sb_1.replace(sb_1.indexOf("una"), sb_1.lastIndexOf("!"), "StringBuilder"); 

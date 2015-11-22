@@ -1,0 +1,2 @@
+int a = -55;
+int b = -a; // b avrà il valore di +55

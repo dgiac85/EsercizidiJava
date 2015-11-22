@@ -1,0 +1,27 @@
+List<Integer> a_list = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7));
+Set<String> a_set = new TreeSet<>();
+a_set.add("Pellegrino");
+a_set.add("Marco");
+a_set.add("Carlo");
+a_set.add("Domenico");
+a_set.add("Roberto");
+
+// ritorna una lista con gli elementi 4,5,6,7
+List<Integer> another_list = a_list.stream().skip(3).collect(Collectors.toList());
+System.out.println(another_list); // [4, 5, 6, 7]
+
+// ritorna un set con gli elementi Carlo, Domenico
+Set<String> another_set = a_set.stream().limit(2).collect(Collectors.toSet());
+System.out.println(another_set); // [Carlo, Domenico]
+
+// ritorna una mappa dove le chiavi sono il nome dei modelli delle car
+// della collezione Cars e i valori sono i rispettivi colori
+Map<String, Colors> model_map = cars.stream()
+        .distinct()
+        .collect(Collectors.toMap(car -> car.getModel(), car -> car.getColor()));
+for (Map.Entry<String, Colors> entry : model_map.entrySet())
+{
+    String key = entry.getKey();
+    Colors value = entry.getValue();
+    System.out.println(key + " " + value);
+};

@@ -1,0 +1,6 @@
+public synchronized void doStuff() { /* statements */ } // metodo sincronizzato
+
+public void doStuff() // blocco sincronizzato EQUIVALENTE!!!
+{
+     synchronized(this)  { /* statements */ }
+}

@@ -1,0 +1,2 @@
+String s1 = new String("  Sono una stringa!\n\n\t");
+String n = s1.trim(); // Sono una stringa!

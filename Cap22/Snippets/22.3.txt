@@ -1,0 +1,5 @@
+INSERT INTO genere (descrizione) VALUES ("Linguaggio C++");
+INSERT INTO genere (descrizione) VALUES ("Linguaggio Java");
+INSERT INTO genere (descrizione) VALUES ("Grafica 2D");
+INSERT INTO genere (descrizione) VALUES ("Grafica 3D");
+INSERT INTO genere (descrizione) VALUES ("OOP");

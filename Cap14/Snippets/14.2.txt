@@ -1,0 +1,6 @@
+/**
+ * doStuff {@code <doStuff> method}
+ * 
+ * @since 1.0
+ */
+public void doStuff() {}

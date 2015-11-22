@@ -1,0 +1,10 @@
+LinkedList<String> al_operating_systems = new LinkedList<>(Arrays.asList(os));
+List<String> sync_al_operating_systems = Collections.synchronizedList(al_operating_systems);
+synchronized (sync_al_operating_systems)
+{
+    Iterator<String> it = sync_al_operating_systems.iterator();
+    while (it.hasNext()) 
+    {
+        // fai qualcosa...
+    }
+}

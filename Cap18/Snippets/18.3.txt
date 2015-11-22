@@ -1,0 +1,2 @@
+AtomicInteger i = new AtomicInteger(10);      
+int val = i.incrementAndGet();

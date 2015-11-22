@@ -1,0 +1,4 @@
+int x[] = new int[2];	
+int y[] = null;
+int z[] = 1b67f74; // ERRORE - incompatible types: int cannot be converted to int[]
+

@@ -1,0 +1,7 @@
+// forma standard
+double db = 45.1453; // letterale double
+float fl = 45.3345F; // letterale float
+
+// forma scientifica
+double dbsp = 123.12E+4; // 123.12 * 10 ^ 4 ossia 1231200
+double dbsn = 123.12E-4; // 123.12 * 10 ^ -4 ossia 0.012312

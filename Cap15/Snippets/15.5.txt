@@ -1,0 +1,3 @@
+Character c = new Character('A');
+Character d = new Character('A');
+boolean b = c.equals(d); // true

@@ -1,0 +1,13 @@
+conn.setAutoCommit(false); // impostazioni parametri transazione
+conn.setTransactionIsolation(Connection.TRANSACTION_SERIALIZABLE);
+
+// istruzioni
+Statement s = conn.createStatement();
+int res1 = s.executeUpdate("update conti_bancari set saldo = saldo + 1000" + 
+                           "where conto = 456");
+int res2 = s.executeUpdate("update conti_bancari set saldo = saldo - 1000" + 
+                           "where conto = 566");
+
+// verifica ed eventuale commit o rollback
+if (res1 == 1 && res2 == 1) { conn.commit(); ... }
+else { conn.rollback(); ... }

@@ -1,0 +1,4 @@
+int a = 10, b = 10;
+int c = a++; // a c sarà assegnato il valore 10 e poi a sarà incrementata di 1 valendo 11
+int d = --b; // prima b sarà decrementato di 1, valendo 9 
+             // e poi a d sarà assegnato il valore di 9

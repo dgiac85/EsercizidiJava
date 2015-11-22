@@ -1,0 +1,37 @@
+// si trova nel package java.lang
+public interface Runnable 
+{
+    public abstract void run();
+}
+
+// si trova nel package java.awt.event
+public interface ActionListener extends EventListener 
+{
+    public void actionPerformed(ActionEvent e);
+}
+
+// si trova nel package java.io
+public interface FileFilter 
+{
+    boolean accept(File pathname);
+}
+
+// si trova nel package java.util.function
+public interface Function<T, R> 
+{
+    R apply(T t);
+    ...
+}
+
+// si trova nel package java.util.function
+public interface Predicate<T> 
+{
+    boolean test(T t);
+    ...
+}
+
+// si trova nel package java.util.function
+public interface Supplier<T> 
+{
+    T get();
+}

@@ -1,0 +1,3 @@
+String jdbc_driver = "com.mysql.jdbc.Driver"; 
+try { Class.forName(jdbc_driver); }
+catch (ClassNotFoundException ex) { ex.printStackTrace(); }

@@ -1,0 +1,8 @@
+Character c = new Character('A');
+Character d = new Character('4');
+int n1 = Character.digit(c, 16); // 10. A convertibile perché in esadecimale 
+                                 // equivale a 10
+int n2 = Character.digit(c, 10); // –1. A non è convertibile. Valori permessi 
+                                 // da 0 a 9 (base 10)
+int n3 = Character.digit(d, 2);  // –1. 4 non è convertibile. Valori permessi 
+                                 // 0 e 1 (base 2)

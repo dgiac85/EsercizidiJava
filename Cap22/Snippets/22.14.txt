@@ -1,0 +1,6 @@
+String db_url = "jdbc:mysql://localhost:3306/articoli";
+String username = "java8";
+String password = "java8";
+
+try(Connection conn = DriverManager.getConnection(db_url, username, password)) {}        
+catch (SQLException ex) { ex.printStackTrace(); }

@@ -1,0 +1,26 @@
+...
+import javax.sql.rowset.RowSetFactory;
+import javax.sql.rowset.RowSetProvider;
+import javax.sql.rowset.CachedRowSet;
+
+try
+{
+    Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/articoli", 
+                                                  "java8", "java8");
+    conn.setAutoCommit(false);
+
+    RowSetFactory rf = RowSetProvider.newFactory();
+    CachedRowSet crs = rf.createCachedRowSet();
+
+    crs.setCommand("SELECT * FROM genere");
+    crs.execute(conn);
+
+    // mi sposto sulla prima riga e modifico un campo
+    crs.first();
+    crs.updateString(2, "C++");
+    crs.updateRow();
+   
+    // mando le modifiche alla sorgente dati
+    crs.acceptChanges();
+}
+catch (SQLException e) {}

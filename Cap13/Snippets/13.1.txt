@@ -1,0 +1,6 @@
+List raw_list = new ArrayList<Double>();
+
+// in questo caso non è possibile verificare, sia a compile-time sia a run-time, se il // riferimento raw_list contiene effettivamente una lista di tipo List<String>
+// c'è uno heap pollution perché il riferimento string_list si riferisce ad un
+// valore che, di fatto, è di tipo ArrayList<Double> e non di tipo List<String>
+List<String> string_list = raw_list;  // Unchecked warning

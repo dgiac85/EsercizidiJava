@@ -1,0 +1,7 @@
+int number_1;	// CORRETTO
+int number 1;	// ERRORE - ';' expected
+int 1number;	// ERRORE - not a statement
+
+// a e A sono variabili DIVERSE!!!
+int a;
+int A;

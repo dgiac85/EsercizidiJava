@@ -1,0 +1,4 @@
+/**
+ * __do Valore costante: {@value}
+ */
+private final int  __do = 10;

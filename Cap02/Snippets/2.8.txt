@@ -1,0 +1,2 @@
+final int a = 82;
+a = 90; // ERRORE - cannot assign a value to final variable a

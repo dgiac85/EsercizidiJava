@@ -1,0 +1,2 @@
+Character d = new Character('A');
+boolean n = Character.isDigit(d); // false

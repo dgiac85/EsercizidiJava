@@ -1,0 +1,2 @@
+Character c = new Character('a');
+char c2 = Character.toUpperCase(c); // A

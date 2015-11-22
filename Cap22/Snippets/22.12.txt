@@ -1,0 +1,5 @@
+SET @us = "none";
+SET @t = NOW();
+
+CALL showConnectedUser(@us, @t);
+SELECT @us, @t;

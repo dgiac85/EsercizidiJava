@@ -1,0 +1,35 @@
+Path path = Paths.get("C:\\MY_JAVA_SOURCES");
+try
+{
+    Files.walkFileTree(path, new SimpleFileVisitor<Path>()
+    {
+        public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs)
+               throws IOException
+        {
+            System.out.println("Sto per visitare: " + dir.getFileName());
+            return FileVisitResult.CONTINUE;
+        }
+
+        public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) 
+               throws IOException
+        {
+            System.out.println("Sto visitando: " + file.getFileName()
+                             + " dimensioni: (" + attrs.size() + ") byte");
+            return FileVisitResult.CONTINUE;
+        }
+
+        public FileVisitResult postVisitDirectory(Path dir, IOException exc) 
+               throws IOException
+        {
+            System.out.println("Ho terminato la visita di: " + dir.getFileName());
+            return FileVisitResult.CONTINUE;
+        }
+
+        public FileVisitResult visitFileFailed(Path file, IOException exc)
+        {
+            System.err.println("ERRORE nella visita: " + exc);
+            return FileVisitResult.CONTINUE;
+        }                
+    });
+}        
+catch (IOException ex) { ex.printStackTrace(); }
