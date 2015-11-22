@@ -7,7 +7,9 @@ class A_Class
     private int y;
     private int z;
 
-    // blocco di codice per inizializzare più istanze.. è un inizializzatore di istanze.      
+    // blocco di codice per inizializzare più istanze.. è un inizializzatore di istanze.
+    //questo inizializzatore viene eseguito comunque vista la presenza di più costruttori
+    //vale la pena utilizzarlo se ci sono più costruttori
     {
         x = 11;
         y = 12;
@@ -37,7 +39,7 @@ public class Initializers
     {
         // creo un oggetto di tipo A_Class invocando il costruttore a un argomento
         A_Class an_obj = new A_Class(3);
-        System.out.print(an_obj.number);
+        System.out.print(an_obj.number); //stampa il primo risultato senza accapo
 
         // creo un oggetto di tipo A_Class invocando il costruttore a due argomenti
         A_Class an_obj_2 = new A_Class(3, 2);
