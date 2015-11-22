@@ -1,2 +1,0 @@
-com.pellegrinoprincipe.StaticBlock
-com.pellegrinoprincipe.StaticClass

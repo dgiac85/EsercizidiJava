@@ -11,7 +11,7 @@ class StaticClass
         System.out.print("{x = " + x + " a = " + a + " a/b = " + (a / b) + "} ");
     }
 
-    static // blocco static
+    static // blocco static VIENE ESEGUITO UNA VOLTA SOLA
     {
         msg = "Inizializzazione: ";
         System.out.print(msg);

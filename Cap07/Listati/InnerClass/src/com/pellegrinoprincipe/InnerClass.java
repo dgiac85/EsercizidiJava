@@ -20,7 +20,7 @@ class Host
         final int abc = 11;
 
         // definizione di una classe locale a una funzione
-        class LC
+        class LC //classe annidata nel metodo
         {
             int a;
 
@@ -39,7 +39,7 @@ class Host
         a_local.show();
     }
 
-    // DEFINIZIONE classe ANNIDATA
+    // DEFINIZIONE classe ANNIDATA. classe annidata nella classe host
     class Guest
     {
         private String show1 = "Valore 'outer_x' di Host mostrato dal metodo display"
