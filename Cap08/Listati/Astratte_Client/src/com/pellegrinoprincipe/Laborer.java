@@ -11,7 +11,8 @@ public class Laborer extends Employee
     {
         super(n, c);
         setPezzi(p);
-        setOreLavorate(o);
+        setOreLavorate(o); //METODO CHE NON è PRESENTE AD ESEMPIO IN ENGINEER
+        //E NON è PRESENTE NEANCHE IN EMPLOYEE
     }
 
     public void setOreLavorate(int o) // imposto le ore lavorate

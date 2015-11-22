@@ -19,5 +19,5 @@ public abstract class Employee
         return cognome + " " + nome;
     }
 
-    public abstract int earning(); // metodo astratto
+    public abstract int earning(); // metodo astratto CHE VA RIDEFINITO DALLE CLASSI DERVATE
 }

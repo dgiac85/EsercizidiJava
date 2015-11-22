@@ -22,7 +22,7 @@ public class Classi_Anonime
             public int perimeter() { return 0; }
             public void draw() { System.out.println("Draw...X"); }
         });
-        class A_Shape implements TwoDShape // metodo alternativo 
+        class A_Shape implements TwoDShape // metodo alternativo alla classe anonima
                                            // con l'uso di una classe locale
          {
             public int area() { return 1; }

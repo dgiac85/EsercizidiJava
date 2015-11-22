@@ -7,7 +7,7 @@ public class Engineer extends Employee
 
     public Engineer(String n, String c, int p, int f)
     {
-        super(n, c);
+        super(n, c); //INVOCO SUPER PER RICHIAMARE IL COSTRUTTORE EMPLOYEE
         setPercentage(p);
         setFisso(f);
     }

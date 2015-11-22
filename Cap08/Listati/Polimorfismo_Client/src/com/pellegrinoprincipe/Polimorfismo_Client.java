@@ -19,7 +19,7 @@ public class Polimorfismo_Client
         if (r2 instanceof Square) // r2 è in effetti un tipo Square e lo riassegno
         {
             output += "*** r2 è a run-time un tipo Square ... riassegniamolo a un tipo Square ***";
-            s2 = (Square) r2;
+            s2 = (Square) r2; //faccio un casting a Square
         }
         else
             output += "r2 non è un tipo Square!";
