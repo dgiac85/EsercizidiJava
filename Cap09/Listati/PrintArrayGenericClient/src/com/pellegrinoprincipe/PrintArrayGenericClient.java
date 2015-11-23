@@ -6,6 +6,7 @@ class PrintArrayGeneric
 
     public <E> void printArray(E el[])
     {
+        //l'array el accetta tutti i tipi in arrivo
         for (E i : el) // stampa in modo generico gli elementi dell'array di differente tipo
             System.out.print(i + " ");
     }
@@ -26,7 +27,8 @@ public class PrintArrayGenericClient
         pag.printArray(d);
         pag.printArray(i);
         pag.printArray(c);
-        pag.<String>printArray(s); // sintassi alternativa di invocazione di un metodo
+        pag.printArray(s); // sintassi alternativa di invocazione di un metodo.
+                           //prima ci stava <String> ma non ci sta il bisogno di inserirlo
                                    // generico
         System.out.print("]");
     }

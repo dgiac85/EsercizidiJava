@@ -1,2 +1,0 @@
-com.pellegrinoprincipe.PrintArrayGeneric
-com.pellegrinoprincipe.PrintArrayGenericClient

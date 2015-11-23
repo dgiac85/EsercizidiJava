@@ -3,7 +3,10 @@ package com.pellegrinoprincipe;
 class CalculateMaxGeneric
 {
     public <T extends Comparable<T>> T maximum(T a, T b, T c)
+    // T è il valore di ritorno, maximum è il nome del metodo, tra <> abbiamo il generico
+    //T è un parametro di tipo che estende l'interfaccia Comparable        
     {
+        //bisogna estendere la classe Comparable<T> per usare il compareTo
         T max = a;
 
         if (b.compareTo(max) > 0)
