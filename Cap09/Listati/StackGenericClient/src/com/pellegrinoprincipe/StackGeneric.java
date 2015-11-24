@@ -6,7 +6,8 @@ class StackGeneric<E>
     private int top;
     private E[] elems;
 
-    public StackGeneric() { this(5); }
+    public StackGeneric() { this(5); }//se non gli do nient elo inizializza a 5
+                                      //tramite il costruttore vuoto
 
     public StackGeneric(int nr)
     {

@@ -7,7 +7,9 @@ public class StackGenericClient
         Double d[] = { 11.1, 11.2, 8.6 };
         Integer i[] = { 12, 13, 5 };
         Character c[] = { 'a', 'b', 'z' };
-
+        
+        //creo tre stack che contengono tre tipologie di valori different
+        //uno stack contiene 3 double, un altro 5 char e l'altro 3 int
         StackGeneric<Double> sd = new StackGeneric<>(3);
         StackGeneric<Integer> si = new StackGeneric<>(3);
         StackGeneric<Character> sc = new StackGeneric<>(3);
