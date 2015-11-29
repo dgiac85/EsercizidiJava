@@ -8,9 +8,9 @@ public class ChainedExceptions
         {
             call2();
         }
-        catch (Exception e)
+        catch (Exception e) //becca l'eccezione lanciata da call2 con la throw
         {
-            System.out.println("Causa originaria: " + e.getCause().getMessage());
+            System.out.println("Causa originaria in CALL1: " + e.getCause().getMessage());
             System.out.println(e.getMessage());
             throw new Exception("Eccezione lanciata da call1...", e);
             // throw (Exception) new Exception("Eccezione lanciata da call1...").initCause(e);
@@ -23,7 +23,7 @@ public class ChainedExceptions
         {
             call3();
         }
-        catch (Exception e)
+        catch (Exception e) //becca l'eccezione lanciata da call3 con la throw
         {
             throw new Exception("Eccezione lanciata da call2...", e);
             // throw (Exception) new Exception ("Eccezione lanciata da call2...").initCause(e);
@@ -41,9 +41,9 @@ public class ChainedExceptions
         {
             call1();
         }
-        catch (Exception e)
+        catch (Exception e) //becca l'eccezione lanciata da call1 con la throw
         {
-            System.out.println("Causa originaria: " + e.getCause().getMessage());
+            System.out.println("Causa originaria in MAIN: " + e.getCause().getMessage());
             System.out.println(e.getMessage());
             System.out.println("ATTENZIONE eccezione nel main RILEVATA...");
         }

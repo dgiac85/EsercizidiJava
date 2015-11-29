@@ -13,7 +13,18 @@ public class CheckedExceptions
 
     public static void main(String[] args)
     {
-        try(Scanner n_scanner = FileScanner("Test.html")) // try-with-resources
+        //QUESTO FILE ESISTE si trova nella cartelle LISTATI del capitolo 11
+        try(Scanner n_scanner = FileScanner("../newjson.json")) // try-with-resources 
+        {
+            System.out.println("Se vi è un'eccezione non saro' visualizzata!");
+        }
+        catch (FileNotFoundException fnf)
+        {            
+            System.out.println("Eccezione. File non trovato. " + 
+                               "Forse il nome file e' errato?");
+        }
+        //QUESTO FILE INVECE NON ESISTE
+        try(Scanner n_scanner = FileScanner("newjsons.json")) // try-with-resources
         {
             System.out.println("Se vi è un'eccezione non saro' visualizzata!");
         }

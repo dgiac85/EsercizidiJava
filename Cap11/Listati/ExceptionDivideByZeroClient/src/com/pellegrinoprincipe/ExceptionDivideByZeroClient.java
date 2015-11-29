@@ -25,6 +25,7 @@ public class ExceptionDivideByZeroClient
 
         for (int n = 0; n < denom.length; n++) // fai la divisione...
         {
+            //all'interno della for gestisco l'errore e vado avanti!
             try
             {
                 makeDiv(num, denom[n]);
